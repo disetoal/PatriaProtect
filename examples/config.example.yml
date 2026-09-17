@@ -1,0 +1,37 @@
+# Short example only. The real server config is not included.
+allowed-worlds:
+  - '*'
+
+max-claims-per-player: 3
+max-members-per-claim: 30
+claim-gap: 2
+
+economy:
+  enabled: false
+
+database:
+  enabled: false
+  url: 'jdbc:mariadb://127.0.0.1:3306/patriaprotect'
+  user: patriaprotect
+  password: change-me
+  server-id: survival-1
+  poll-seconds: 5
+
+protection-types:
+  pequena:
+    name: Small protection
+    size: 10
+    permission: patriaprotect.type.pequena
+    cost: 0
+    max-members: 0
+    acquisition: KIT
+    material: COPPER_ORE
+
+  grande:
+    name: Large protection
+    size: 50
+    permission: patriaprotect.type.grande
+    cost: 0
+    max-members: 3
+    acquisition: COINS
+    material: GOLD_ORE

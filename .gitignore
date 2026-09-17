@@ -1,0 +1,11 @@
+# I keep the actual builds/private source out of this showcase repo
+*.jar
+*.class
+target/
+build/
+out/
+.gradle/
+.idea/
+.vscode/
+*.iml
+logs/
